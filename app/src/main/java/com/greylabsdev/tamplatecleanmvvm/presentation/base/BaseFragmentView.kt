@@ -11,6 +11,8 @@ abstract class BaseFragmentView(
     @LayoutRes private val layoutResId: Int
 ): Fragment() {
 
+    protected abstract val viewModel: BaseViewModel
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,

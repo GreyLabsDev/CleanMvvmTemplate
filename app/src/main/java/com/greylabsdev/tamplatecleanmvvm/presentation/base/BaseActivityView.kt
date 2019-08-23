@@ -4,10 +4,13 @@ import android.os.Bundle
 import android.os.PersistableBundle
 import androidx.annotation.LayoutRes
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.ViewModel
 
 abstract class BaseActivityView(
     @LayoutRes private val layoutResId: Int
 ): AppCompatActivity() {
+
+    protected abstract val viewModel: BaseViewModel
 
     override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
         super.onCreate(savedInstanceState, persistentState)
