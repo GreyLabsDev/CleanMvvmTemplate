@@ -1,6 +1,5 @@
-package com.greylabsdev.tamplatecleanmvvm.di
+package com.greylabsdev.tamplatecleanmvvm.data.network
 
-import com.greylabsdev.tamplatecleanmvvm.data.network.Api
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import org.koin.dsl.module
@@ -13,7 +12,12 @@ private const val API_ENDPOINT = ""
 
 val retrofitModule = module {
 
-    single { createApiService<Api>(get(), API_ENDPOINT) }
+    single {
+        createApiService<Api>(
+            get(),
+            API_ENDPOINT
+        )
+    }
 
     factory { createLoggingInterceptor() }
 

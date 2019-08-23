@@ -1,4 +1,4 @@
-package com.greylabsdev.tamplatecleanmvvm.di
+package com.greylabsdev.tamplatecleanmvvm.common
 
 import com.greylabsdev.tamplatecleanmvvm.common.ResourceManager
 import org.koin.dsl.module

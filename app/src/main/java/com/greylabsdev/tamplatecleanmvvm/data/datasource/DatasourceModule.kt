@@ -1,4 +1,4 @@
-package com.greylabsdev.tamplatecleanmvvm.di
+package com.greylabsdev.tamplatecleanmvvm.data.datasource
 
 
 import com.greylabsdev.tamplatecleanmvvm.data.datasource.local.LocalDataSource

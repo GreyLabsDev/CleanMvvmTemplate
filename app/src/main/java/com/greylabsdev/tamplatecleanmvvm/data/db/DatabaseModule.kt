@@ -1,8 +1,7 @@
-package com.greylabsdev.tamplatecleanmvvm.di
+package com.greylabsdev.tamplatecleanmvvm.data.db
 
 import android.content.Context
 import androidx.room.Room
-import com.greylabsdev.tamplatecleanmvvm.data.db.AppDatabase
 import org.koin.dsl.module
 
 private const val DB_NAME = "db_contacts"
@@ -15,7 +14,9 @@ val databaseModule = module {
 
 fun createDbInstance(context: Context): AppDatabase {
 
-    return Room.databaseBuilder(context, AppDatabase::class.java, DB_NAME)
+    return Room.databaseBuilder(context, AppDatabase::class.java,
+        DB_NAME
+    )
         .fallbackToDestructiveMigration()
         .build()
 }

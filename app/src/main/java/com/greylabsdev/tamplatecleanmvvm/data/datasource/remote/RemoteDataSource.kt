@@ -1,7 +1,7 @@
 package com.greylabsdev.tamplatecleanmvvm.data.datasource.remote
 
-import com.greylabsdev.tamplatecleanmvvm.data.datasource.DataSource
+import com.greylabsdev.tamplatecleanmvvm.data.datasource.IDataSource
 
-class RemoteDataSource() : DataSource {
+class RemoteDataSource() : IDataSource {
 
 }

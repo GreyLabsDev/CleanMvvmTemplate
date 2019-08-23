@@ -1,4 +1,4 @@
-package com.greylabsdev.tamplatecleanmvvm.di
+package com.greylabsdev.tamplatecleanmvvm.data.repository
 
 import com.greylabsdev.tamplatecleanmvvm.data.repository.RepositoryImpl
 import org.koin.core.qualifier.named
